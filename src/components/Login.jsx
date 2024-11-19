@@ -9,7 +9,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/", { email, password })
+      .post("https://food-del-backend-mw9j.onrender.com/", { email, password })
       .then((res) => {
         console.log(res);
         if (res.status == 200) {

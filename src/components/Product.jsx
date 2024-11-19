@@ -31,7 +31,7 @@ const Product = () => {
     const getproduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/products/${id}`
+          `https://food-del-backend-mw9j.onrender.com/${id}`
         );
         setProduct(response.data);
       } catch (error) {

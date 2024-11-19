@@ -7,7 +7,7 @@ const Products = () => {
   useEffect(() => {
     const getproducts = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/products");
+        const response = await axios.get("https://food-del-backend-mw9j.onrender.com/products");
         setproducts(response.data);
       } catch (error) {
         console.log("Error to fecthing products");
